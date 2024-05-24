@@ -33,6 +33,7 @@ class Destination(db.Model):
         return f"Name: {self.name}"
 
 class Comment(db.Model):
+    
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String(400))
